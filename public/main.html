@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Pomodoro Clock</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link href='main.css' rel='stylesheet'>
+    <audio id="focus" src="audio/koto.mp3" type="audio/mpeg"></audio>
+    <audio id="relax" src="audio/shamisen.wav" type="audio/wav"></audio>
+  </head>
+  <body>
+    <flexWrapper>
+      <flexBox>
+
+        <header>
+          <subTitle> POMODORO CLOCK </subTitle>
+          <timer>
+            <countDown>
+              <span></span>
+            </countDown>
+            <reset></reset>
+          </timer>
+        </header>
+
+        <clocks>
+          <clock1>
+            <focus> FOCUS </focus>
+            <adjust1>
+              <up1> + </up1>
+              <focusTime></focusTime>
+              <down1> &#8722; </down1>
+            </adjust1>
+          </clock1>
+
+          <clock2>
+            <relax> RELAX </relax>
+            <adjust2>
+              <up2> + </up2>
+              <relaxTime></relaxTime>
+              <down2> &#8722; </down2>
+            </adjust2>
+          </clock2>
+        </clocks>
+
+      </flexBox>
+    </flexWrapper>
+
+    <script type='text/javascript' src='jquery-3.1.1.js'></script>
+    <script type='text/javascript' src='main.js'></script>
+
+  </body>
+</html>

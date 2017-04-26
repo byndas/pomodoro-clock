@@ -1,0 +1,198 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+  font-size: 62.5%;
+  font: serif;
+}
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset browser styles */
+
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+flexWrapper {
+  display: flex;
+  min-height: 100%;
+  background-color: rgb(57, 56, 74);
+}
+flexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: auto;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  font-size: 9vh;
+}
+subTitle {
+  display: flex;
+  color: rgba(25,152,205,.5);
+  text-align: center;
+  word-spacing: 4vw;
+  padding-bottom: 5vh;
+}
+timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+countDown {
+  display: flex;
+  color: rgb(280,280,150);
+  font-size: 12.5vh;
+  cursor: default;
+  justify-content: center;
+}
+reset {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-self: center;
+  cursor: pointer;
+  color: rgba(251,96,106, .5);
+  font-size: 10vh;
+  padding: 5vh 0;
+}
+clocks {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  justify-content: center;
+}
+clock1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-image: linear-gradient( 200deg, rgb(44,52,70), rgb(50,60,80) );
+}
+clock2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-image: linear-gradient( 200deg, rgb(50,60,80), rgb(44,52,70) );
+}
+focus {
+  font-size: 8vh;
+  color: snow;
+  opacity: .75;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  margin: .5em;
+}
+adjust1, adjust2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-around;
+  font-size: 12.5vh;
+}
+up1, up2 {
+  color: rgb(20,241,185);
+  cursor: pointer;
+  font-size: 15vh;
+}
+focusTime {
+  color: rgb(25,152,205);
+  cursor: default;
+  font-size: 12.5vh;
+}
+down1, down2 {
+  color: rgb(251,96,106);
+  cursor: pointer;
+  font-size: 15vh;
+}
+relax {
+  font-size: 8vh;
+  color: snow;
+  opacity: .75;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  margin: .5em;
+}
+relaxTime {
+ color: rgb(25,152,205);
+ cursor: default;
+ font-size: 12.5vh;
+}
+.focusMode, .relaxMode, .noClick {
+  pointer-events: none;
+}
+.active {
+  color: rgb(280,280,150);
+  /*background-color: rgb(15,37,50);*/
+}
+.darken {
+  opacity: .5;
+}
+.lighten {
+  color: rgba(251,96,106, .75);
+  font-size: 5vh;
+  font-style: italic;
+}
+up1:hover, up2:hover, down1:hover, down2:hover, reset:hover {
+  opacity: .5;
+}
+focus:hover, relax:hover {
+  color: rgb(280,280,150);
+}
+/*@keyframes clock {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.showsLevel {
+   animation: levelModal 1s alternate 2;
+}*/
+
+/*
+@media (max-width: 480px) {  // phone widths
+  .flexbox0 {
+    max-width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) { // tablet widths
+  .flexbox0 {
+    max-width: 500px;
+    height: 500px;
+  }
+}*/
