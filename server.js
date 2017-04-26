@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 app.use('/public', express.static(process.cwd() + '/public'));
-app.use(favicon(path.join(__dirname,'favicon','favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon','favicon.ico')));
 app.use(audio(path.join(__dirname,'audio','koto.mp3')));
 app.use(audio(path.join(__dirname,'audio','shamisen.wav')));
 
